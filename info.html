@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>About konvrt</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="units.js">
+</script>
+<script type="text/javascript" src="scripts.js">
+</script>
+<script type="text/javascript" src="infoscript.js">
+</script>
+<script type="text/javascript" src="unitinfo.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="onLoadInf();">
+
+<div id="navi">
+<ul>
+<a href="index.html"><li>HOME</li></a>
+<a href="info.html"><li>INFO</li></a>
+<a href="apiinfo.html"><li>API</li></a>
+</ul>
+</div>
+
+<div id="logo">
+<img src="images/logo.png" alt="konvrt" />
+</div>
+
+<div id="bodywrapper">
+
+
+
+<div class="infocontent">
+
+<h2>about <strong>k</strong>onvrt</h2>
+<p>
+konvrt is a multi-purpose unit conversion site. The underlying goal of the site is to provide a simple to use and sleek interface, while still maintaining maximum practicality to the user in the act of unit conversion. It aims to have formulas to convert as many units as possible, from meters and pounds, to chains and parsecs. The simplicity of the design really is the key feature here.
+</p>
+
+<h2>about the units</h2>
+<div class="sbox">
+<form class="mform" id="iForm">
+<label>category:</label>
+<div class="selectiondiv">
+<select id="unitCat" onchange="loadUnitsInf();">
+	<option>null</option>
+</select>
+</div>
+<br />
+<div style="margin-top:-35px;">
+<label>unit:</label>
+<div class="selectiondiv">
+<select id="fromUnit">
+	<option>Select a Category</option>
+</select>
+</div>
+</div>
+<br />
+<button class="regButton" onclick="getInfo(); return false;" style="position:absolute; right: 20px;">Get Info</button>
+</form>
+<div class="clearDiv">
+&nbsp;
+</div>
+
+</div>
+<select id="toUnit" style="display:none;">
+	<option>Nothing Here!</option>
+</select>
+
+
+</div>
+
+
+<div class="clearDiv" style="height: 150px;">
+&nbsp;
+</div>
+
+</div>
+
+
+<div class="clearDiv">
+&nbsp;
+</div>
+
+<div id="footer">
+&copy; Copyright 2013 konvrt. All Rights Reserved.
+</div>
+
+<div id="icontainer">
+
+</div>
+
+</body>
+</html>

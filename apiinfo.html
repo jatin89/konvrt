@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>konvrt API</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<script type="text/javascript" src="units.js">
+</script>
+<script type="text/javascript" src="scripts.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="loadCat();">
+
+<div id="navi">
+<ul>
+<a href="index.html"><li>HOME</li></a>
+<a href="info.html"><li>INFO</li></a>
+<a href="apiinfo.html"><li>API</li></a>
+</ul>
+</div>
+
+<div id="logo">
+<img src="images/logo.png" alt="konvrt" />
+</div>
+
+<div id="bodywrapper">
+
+
+
+<div class="infocontent">
+
+<h2>the <strong>k</strong>onvrt api</h2>
+<p>
+konvrt is equipped with a simple yet powerful API for developers. With the konvrt API, developers can harness konvrt's algorithms in their own applicatons. Using the API is very simple, just generate an API call URL below!
+<br/>
+<br/>
+To generate an API call, follow these steps:
+<br/>
+<br/>
+<strong>S</strong>tep 1: Enter the quantity.
+<br/>
+<strong>S</strong>tep 2: Select the unit category from the drop down menu.
+<br/>
+<strong>S</strong>tep 3: Select the unit which you want to convert from.
+<br/>
+<strong>S</strong>tep 4: Select the unit which you want to convert to.
+<br/>
+<strong>S</strong>tep 5: Click on the Generate URL button.
+<br/>
+<br/>
+A pop-up dialog will appear with the API call URL. This URL will return the result (just the quantity) in plaintext format.
+</p>
+
+<h2>api call generator</h2>
+
+<div class="sbox" style="height:350px;">
+
+<form class="mform" id="aForm">
+<label>quantity:</label>
+<input type="text" id="fromQuan" onkeydown="return isNum(event);" />
+<br />
+<label>category:</label>
+<div class="selectiondiv">
+<select id="unitCat" onchange="loadUnits();">
+	<option>Select a Category</option>
+</select>
+</div>
+<br />
+<div style="margin-top:-35px;">
+<label>from unit:</label>
+<div class="selectiondiv">
+<select id="fromUnit">
+	<option>Select a Category</option>
+</select>
+</div>
+<br />
+<div style="margin-top:-35px;">
+<label>to unit:</label>
+<div class="selectiondiv">
+<select id="toUnit">
+	<option>Select a Category</option>
+</select>
+</div>
+</div>
+<br />
+<button class="regButton" onclick="genAPI(); return false;" style="position:absolute; right: 20px;">Generate URL</button>
+</form>
+
+<div class="clearDiv">
+&nbsp;
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="clearDiv" style="height: 150px;">
+&nbsp;
+</div>
+
+</div>
+
+
+<div class="clearDiv">
+&nbsp;
+</div>
+
+<div id="footer">
+&copy; Copyright 2013 konvrt. All Rights Reserved.
+</div>
+
+</body>
+</html>
